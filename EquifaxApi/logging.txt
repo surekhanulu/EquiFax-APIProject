@@ -1,0 +1,168 @@
+Request method:	GET
+Request URI:	http://dummy.restapiexample.com/api/v1/employee/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=1
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, private, max-age=31536000
+Content-Type: application/json
+Date: Tue, 20 Apr 2021 19:00:20 GMT
+Display: staticcontent_sol, staticcontent_sol
+Expires: Wed, 20 Apr 2022 19:00:20 GMT
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Referrer-Policy: 
+Response: 200
+Server: nginx/1.16.0
+Vary: Accept-Encoding
+Vary: Accept-Encoding,User-Agent,Origin
+X-Ezoic-Cdn: Miss
+X-Middleton-Display: staticcontent_sol, staticcontent_sol
+X-Middleton-Response: 200
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 58
+X-Sol: pub_site
+Content-Length: 179
+
+{
+    "status": "success",
+    "data": {
+        "id": 1,
+        "employee_name": "Tiger Nixon",
+        "employee_salary": 320800,
+        "employee_age": 61,
+        "profile_image": ""
+    },
+    "message": "Successfully! Record has been fetched."
+}
+Request method:	GET
+Request URI:	http://dummy.restapiexample.com/api/v1/employee/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=2
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 429 Too Many Requests
+Content-Encoding: gzip
+Content-Type: text/html; charset=UTF-8
+Date: Tue, 20 Apr 2021 19:00:22 GMT
+Display: staticcontent_sol
+Expires: Mon, 19 Apr 2021 19:00:22 GMT
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Pagespeed: off
+Referrer-Policy: 
+Response: 429
+Retry-After: 38
+Server: nginx/1.16.0
+Vary: Accept-Encoding
+Vary: Accept-Encoding,User-Agent,Origin
+X-Ezoic-Cdn: Miss
+X-Middleton-Display: staticcontent_sol
+X-Middleton-Response: 429
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 57
+X-Ratelimit-Reset: 1618945260
+X-Sol: pub_site
+Content-Length: 588
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Too Many Requests</title>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+    <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+  </head>
+  <body>
+    <div class="flex-center position-ref full-height">
+      <div class="code">
+                429            </div>
+      <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+    </div>
+  </body>
+</html>
+Request method:	DELETE
+Request URI:	http://dummy.restapiexample.com/api/v1/delete/2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=2
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Cache-Control: no-cache, private, max-age=31536000
+Content-Type: application/json
+Date: Tue, 20 Apr 2021 19:00:22 GMT
+Display: staticcontent_sol, staticcontent_sol
+Expires: Wed, 20 Apr 2022 19:00:22 GMT
+Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Referrer-Policy: 
+Response: 200
+Server: nginx/1.16.0
+Vary: Accept-Encoding
+Vary: Accept-Encoding,Origin
+X-Ezoic-Cdn: Miss
+X-Middleton-Display: staticcontent_sol, staticcontent_sol
+X-Middleton-Response: 200
+X-Ratelimit-Limit: 60
+X-Ratelimit-Remaining: 58
+X-Sol: pub_site
+Content-Length: 81
+
+{
+    "status": "success",
+    "data": "2",
+    "message": "Successfully! Record has been deleted"
+}
