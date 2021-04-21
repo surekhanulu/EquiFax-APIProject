@@ -14,50 +14,44 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import junit.framework.Assert;
 import resources.ApiResources;
 import resources.TestDataBuild;
 import resources.Utils;
 
 public class StepDefinitions extends Utils {
-	ResponseSpecification resspec;
-	RequestSpecification res;
+	RequestSpecification request;
 	Response response;
 
 	@Given("GetEmployee Api {string}")
 	public void getemployee_Api(String emp_id) throws IOException {
-		res = given().spec(requestSpecification().pathParams("id", emp_id));
+		request = given().spec(requestSpecification().pathParams("id", emp_id));
 	}
 
 	@When("user calls {string} with {string} http request")
 	public void user_calls_with_http_request(String resource, String method) {
 		ApiResources resourceapi = ApiResources.valueOf(resource);
 
-		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-
 		if (method.equalsIgnoreCase("Get")) {
-			response = res.when().get(resourceapi.getResource());
-
+			response = request.when().get(resourceapi.getResource());
 		} else if (method.equalsIgnoreCase("Delete")) {
-			response = res.when().delete(resourceapi.getResource());
+			response = request.when().delete(resourceapi.getResource());
 		}
 	}
 
 	@Then("the API call is success with status code {int} {string}")
-	public void the_API_call_is_success_with_status_code(Integer code, String method) {
+	public void the_API_call_is_success_with_status_code(int code, String method) {
 		if (method.equals("GET")) {
-			if (response.getStatusCode() == 200) {
+			if (response.getStatusCode() == code) {
 				String resp = response.asString();
 				JsonPath js = new JsonPath(resp);
-
 				System.out.println("Employee details:" + js.get("data").toString());
-
 			} else {
-				assertEquals("Emp record get has not been successfull.", response.getStatusCode(), 200);
+				assertEquals("Emp record get has not been successfull.", code, response.getStatusCode());
 				System.out.println("Employee record get API status code: " + response.getStatusCode());
 			}
-
 		} else {
-			if (response.getStatusCode() == 200) {
+			if (response.getStatusCode() == code) {
 				String resp = response.asString();
 				JsonPath js = new JsonPath(resp);
 				assertEquals(js.get("message"), "Successfully! Record has been deleted");
@@ -66,12 +60,10 @@ public class StepDefinitions extends Utils {
 				System.out.println("Emp record has not been deleted.status code is " + response.getStatusCode());
 			}
 		}
-
 	}
 
 	@Given("DeleteEmployee Api {string}")
 	public void deleteemployee_Api(String emp_id) throws IOException {
-		res = given().spec(requestSpecification().pathParams("id", emp_id));
+		request = given().spec(requestSpecification().pathParams("id", emp_id));
 	}
-
 }
