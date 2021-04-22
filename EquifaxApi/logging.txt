@@ -10,82 +10,46 @@ Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 429 Too Many Requests
-Content-Encoding: gzip
-Content-Type: text/html; charset=UTF-8
-Date: Wed, 21 Apr 2021 20:08:22 GMT
-Display: staticcontent_sol
-Expires: Tue, 20 Apr 2021 20:08:22 GMT
+HTTP/1.1 200 OK
+Date: Thu, 22 Apr 2021 00:03:09 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=de3baa89dddd3de8ff3d14bfa414b7c251619049788; expires=Sat, 22-May-21 00:03:08 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
+Cache-Control: no-cache, private, max-age=31536000
+Display: staticcontent_sol, staticcontent_sol
+Expires: Fri, 22 Apr 2022 00:03:08 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
-Pagespeed: off
 Referrer-Policy: 
-Response: 429
-Retry-After: 54
-Server: nginx/1.16.0
+Response: 200
 Vary: Accept-Encoding
 Vary: Accept-Encoding,User-Agent,Origin
 X-Ezoic-Cdn: Miss
-X-Middleton-Display: staticcontent_sol
-X-Middleton-Response: 429
+X-Middleton-Display: staticcontent_sol, staticcontent_sol
+X-Middleton-Response: 200
 X-Ratelimit-Limit: 60
-X-Ratelimit-Remaining: 56
-X-Ratelimit-Reset: 1619035755
+X-Ratelimit-Remaining: 58
 X-Sol: pub_site
-Content-Length: 588
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09987c4c7800003b40dfa56000000001
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=woOPsCVQneWUAQmKu2b8zS7DkN7214iDILNJBRg3QqkYdKT%2Bxkl16BGio9hlhc%2BfVCEyv4tjumTXe%2BNTSsAw0JxBCtTYc4v1wXsuum2b%2BItp3wuY%2Fg8It3E%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 643a965a5ff23b40-SJC
+Content-Encoding: gzip
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Too Many Requests</title>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
-    <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .code {
-                border-right: 2px solid;
-                font-size: 26px;
-                padding: 0 15px 0 15px;
-                text-align: center;
-            }
-
-            .message {
-                font-size: 18px;
-                text-align: center;
-            }
-        </style>
-  </head>
-  <body>
-    <div class="flex-center position-ref full-height">
-      <div class="code">
-                429            </div>
-      <div class="message" style="padding: 10px;">
-                Too Many Requests            </div>
-    </div>
-  </body>
-</html>
+{
+    "status": "success",
+    "data": {
+        "id": 1,
+        "employee_name": "Tiger Nixon",
+        "employee_salary": 320800,
+        "employee_age": 61,
+        "profile_image": ""
+    },
+    "message": "Successfully! Record has been fetched."
+}
 Request method:	GET
 Request URI:	http://dummy.restapiexample.com/api/v1/employee/2
 Proxy:			<none>
@@ -99,27 +63,34 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 429 Too Many Requests
-Content-Encoding: gzip
+Date: Thu, 22 Apr 2021 00:03:10 GMT
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 21 Apr 2021 20:08:23 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d86fb83a859a4220393f97a1723ab92c01619049789; expires=Sat, 22-May-21 00:03:09 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
 Display: staticcontent_sol
-Expires: Tue, 20 Apr 2021 20:08:23 GMT
+Expires: Wed, 21 Apr 2021 00:03:10 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
 Pagespeed: off
 Referrer-Policy: 
 Response: 429
-Retry-After: 2
-Server: nginx/1.16.0
+Retry-After: 37
 Vary: Accept-Encoding
 Vary: Accept-Encoding,User-Agent,Origin
 X-Ezoic-Cdn: Miss
 X-Middleton-Display: staticcontent_sol
 X-Middleton-Response: 429
 X-Ratelimit-Limit: 60
-X-Ratelimit-Remaining: 38
-X-Ratelimit-Reset: 1619035705
+X-Ratelimit-Remaining: 56
+X-Ratelimit-Reset: 1619049827
 X-Sol: pub_site
-Content-Length: 588
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09987c51ae00001fd117a64000000001
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=8KalLpzkFNzY05psA5952m4rm%2BHqeitQaHjFkHEG%2BSrajcKRsUQJWl3doIsg8pAw%2B3Ja5b8HW6RjksusE5coJyVcq%2FhAOkeZe6eovVM%2BbgK3Kq7tStVLBVw%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 643a9662a93e1fd1-SJC
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 <html lang="en">
   <head>
@@ -186,79 +157,37 @@ Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 429 Too Many Requests
-Content-Encoding: gzip
-Content-Type: text/html; charset=UTF-8
-Date: Wed, 21 Apr 2021 20:08:23 GMT
-Display: staticcontent_sol
-Expires: Tue, 20 Apr 2021 20:08:23 GMT
+HTTP/1.1 200 OK
+Date: Thu, 22 Apr 2021 00:03:11 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d968e7bb9f2f77ce22a106622454c31401619049791; expires=Sat, 22-May-21 00:03:11 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
+Cache-Control: no-cache, private, max-age=31536000
+Display: staticcontent_sol, staticcontent_sol
+Expires: Fri, 22 Apr 2022 00:03:11 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
-Pagespeed: off
 Referrer-Policy: 
-Response: 429
-Retry-After: 35
-Server: nginx/1.16.0
+Response: 200
 Vary: Accept-Encoding
 Vary: Accept-Encoding,Origin
 X-Ezoic-Cdn: Miss
-X-Middleton-Display: staticcontent_sol
-X-Middleton-Response: 429
+X-Middleton-Display: staticcontent_sol, staticcontent_sol
+X-Middleton-Response: 200
 X-Ratelimit-Limit: 60
-X-Ratelimit-Remaining: 53
-X-Ratelimit-Reset: 1619035738
+X-Ratelimit-Remaining: 58
 X-Sol: pub_site
-Content-Length: 588
+CF-Cache-Status: DYNAMIC
+cf-request-id: 09987c564a00000fb78a112000000001
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=mXtKCycIgcdLWZJpMlZfJCT4jrI10ceWnOnO7qhvG9WFMwp%2FxnwHi0YF7TpfSwNMGqPsFMVToTFbLF%2FqKFFBEYAftgEAqRadCGnFWFxujw7rJkMamegJ2AI%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 643a966a188d0fb7-SJC
+Content-Encoding: gzip
+alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Too Many Requests</title>
-    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
-    <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .code {
-                border-right: 2px solid;
-                font-size: 26px;
-                padding: 0 15px 0 15px;
-                text-align: center;
-            }
-
-            .message {
-                font-size: 18px;
-                text-align: center;
-            }
-        </style>
-  </head>
-  <body>
-    <div class="flex-center position-ref full-height">
-      <div class="code">
-                429            </div>
-      <div class="message" style="padding: 10px;">
-                Too Many Requests            </div>
-    </div>
-  </body>
-</html>
+{
+    "status": "success",
+    "data": "2",
+    "message": "Successfully! Record has been deleted"
+}
