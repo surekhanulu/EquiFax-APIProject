@@ -1,22 +1,23 @@
 Feature: Validating Employee API's 
 @GetEmployee 
-Scenario Outline: Vefify if the details of employee is retrieved successfully using GetEmployeeAPI 
-	Given GetEmployee Api "<id>"
+Scenario Outline: Verify employee record get using GET API 
+	Given GetEmployee API "<id>"
 	When user calls "getEmployeeApi" with "Get" http request 
-	Then the API call is success with status code 200 "GET"
-	Examples:
-    |id|
-    |1 | 
-    |2 |
+	Then validate response code 200 "GET"
+	And validate the response data for get API "<employee_name>" <employee_salary> <age>
+Examples:
+	|id| employee_name   | employee_salary | age |    
+    |1 | Tiger Nixon     | 320800          | 61  |
+    |2 | Garrett Winters | 170750          | 63  |
   
   
 	
 @DeleteEmployee 
-Scenario Outline: Verify if delete employee functionality is working 
-	Given DeleteEmployee Api "<id>"
+Scenario Outline: Verify employee record delete using DELETE API 
+	Given DeleteEmployee API "<id>"
 	When user calls "deleteEmployeeApi" with "Delete" http request 
-	Then the API call is success with status code 200 "Delete"
-	
+	Then validate response code 200 "Delete"
+	And validate the reponse data for delete API "<status>" "<message>"
 Examples:
-    |id|
-    |2 | 
+    |id| status     | message                               |
+    |2 | success    | Successfully! Record has been deleted |

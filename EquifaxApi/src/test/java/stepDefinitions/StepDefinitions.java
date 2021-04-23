@@ -4,10 +4,13 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -16,15 +19,14 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import junit.framework.Assert;
 import resources.ApiResources;
-import resources.TestDataBuild;
 import resources.Utils;
 
 public class StepDefinitions extends Utils {
 	RequestSpecification request;
 	Response response;
 
-	@Given("GetEmployee Api {string}")
-	public void getemployee_Api(String emp_id) throws IOException {
+	@Given("GetEmployee API {string}")
+	public void getEmployee_API(String emp_id) throws IOException {
 		request = given().spec(requestSpecification().pathParams("id", emp_id));
 	}
 
@@ -39,8 +41,8 @@ public class StepDefinitions extends Utils {
 		}
 	}
 
-	@Then("the API call is success with status code {int} {string}")
-	public void the_API_call_is_success_with_status_code(int code, String method) {
+	@Then("validate response code {int} {string}")
+	public void validate_response_code(int code, String method) {
 		if (method.equals("GET")) {
 			if (response.getStatusCode() == code) {
 				String resp = response.asString();
@@ -52,18 +54,34 @@ public class StepDefinitions extends Utils {
 			}
 		} else {
 			if (response.getStatusCode() == code) {
-				String resp = response.asString();
-				JsonPath js = new JsonPath(resp);
-				assertEquals(js.get("message"), "Successfully! Record has been deleted");
 				System.out.println("Successfully! deleted Records");
 			} else {
+				assertEquals("Emp record delete has not been successfull.", code, response.getStatusCode());
 				System.out.println("Emp record has not been deleted.status code is " + response.getStatusCode());
 			}
 		}
 	}
 
-	@Given("DeleteEmployee Api {string}")
-	public void deleteemployee_Api(String emp_id) throws IOException {
+	@Then("validate the response data for get API {string} {int} {int}")
+	public void validate_the_response_data_for_get_API(String emp_name, int emp_sal, int age) {
+		String resp = response.asString();
+		JsonPath js = new JsonPath(resp);
+		HashMap data = js.get("data");
+		assertEquals(emp_name, data.get("employee_name"));
+		assertEquals(emp_sal, data.get("employee_salary"));
+		assertEquals(age, data.get("employee_age"));
+	}
+
+	@Given("DeleteEmployee API {string}")	
+	public void deleteEmployee_API(String emp_id) throws IOException {
 		request = given().spec(requestSpecification().pathParams("id", emp_id));
+	}
+
+	@Then("validate the reponse data for delete API {string} {string}")
+	public void validate_the_reponse_data_for_delete_API(String status_code, String message) {
+		String resp = response.asString();
+		JsonPath js = new JsonPath(resp);
+		assertEquals(js.get("status"), status_code);
+		assertEquals(js.get("message"), message);
 	}
 }
