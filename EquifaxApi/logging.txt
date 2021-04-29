@@ -11,14 +11,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 23 Apr 2021 00:22:18 GMT
+Date: Thu, 29 Apr 2021 19:48:30 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=dd0437ca0b47d1b3858921e51273e190c1619137337; expires=Sun, 23-May-21 00:22:17 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=d2dff39fa8cddc0ac71776f71a6ca174a1619725709; expires=Sat, 29-May-21 19:48:29 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
 Cache-Control: no-cache, private, max-age=31536000
 Display: staticcontent_sol, staticcontent_sol
-Expires: Sat, 23 Apr 2022 00:22:17 GMT
+Expires: Fri, 29 Apr 2022 19:48:29 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
 Referrer-Policy: 
 Response: 200
@@ -31,11 +31,11 @@ X-Ratelimit-Limit: 60
 X-Ratelimit-Remaining: 58
 X-Sol: pub_site
 CF-Cache-Status: DYNAMIC
-cf-request-id: 099db4320000001eba3a0c6000000001
-Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=eSNxanubY%2Bz%2F1iPUQeuaKyBnBe37xnc9PNzPUKvXqxApQDkSIoVtTyoA82LNu7gpy6WWypspjj8ju4wvc7K4%2FkSN1NvQ0GShVNeeuxVZy38a%2B0nV%2FauXfNg%3D"}],"max_age":604800}
-NEL: {"max_age":604800,"report_to":"cf-nel"}
+cf-request-id: 09c0c609420000024a72b3c000000001
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=eGoWlYFsNMJYVKWsTpTq9TsTqifJYnGNOEO5D87dRIFdYEUR1gDNVZLR3iQ%2FJvj90GCfFflbqdjtKbjBEngY2dLdSZwFUQz%2Fy1Fj3rCCN7x1WtUyX%2Bh4N8A%3D"}]}
+NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 6442efc99af21eba-SJC
+CF-RAY: 647b0c5538c3024a-SJC
 Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -63,14 +63,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 23 Apr 2021 00:22:20 GMT
+Date: Thu, 29 Apr 2021 19:48:31 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d902f5712c5549473028ad9e1d9cbf2a01619137339; expires=Sun, 23-May-21 00:22:19 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=dfe5459a5c3e1beb12de1c9ada2e020421619725711; expires=Sat, 29-May-21 19:48:31 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
 Cache-Control: no-cache, private, max-age=31536000
 Display: staticcontent_sol, staticcontent_sol
-Expires: Sat, 23 Apr 2022 00:22:19 GMT
+Expires: Fri, 29 Apr 2022 19:48:31 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
 Referrer-Policy: 
 Response: 200
@@ -83,11 +83,11 @@ X-Ratelimit-Limit: 60
 X-Ratelimit-Remaining: 58
 X-Sol: pub_site
 CF-Cache-Status: DYNAMIC
-cf-request-id: 099db438290000ed57b2189000000001
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=SVBDUq2CFv7Jo9gIp%2B8n5XbFmokPD0MmLDJmdZFRkUnNWMrqUjk%2BstvTaN4MUgHd0eXps%2F%2BU2%2B7O7c7YL5ErdWxx4vV76QdqluRjuudugODO5%2F1BbxL01JE%3D"}]}
-NEL: {"max_age":604800,"report_to":"cf-nel"}
+cf-request-id: 09c0c60f4100003b40459eb000000001
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=r5%2FXhfGl%2Fh%2BPC5agjkb9%2BoC5hsph%2FFZyopWm6Md2J7jreONSDngV1hPNquCmjnDHV6HYVpgLXdzu2pFS5kj50lb40YvFyc47rczQZKd5m2fIZJtfpVL0XhA%3D"}],"max_age":604800,"group":"cf-nel"}
+NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 6442efd37de6ed57-SJC
+CF-RAY: 647b0c5eca023b40-SJC
 Content-Encoding: gzip
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
@@ -114,37 +114,86 @@ Headers:		Accept=*/*
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
-HTTP/1.1 200 OK
-Date: Fri, 23 Apr 2021 00:22:21 GMT
-Content-Type: application/json
+HTTP/1.1 429 Too Many Requests
+Date: Thu, 29 Apr 2021 19:48:32 GMT
+Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=dc1726c4e3a2081a35b3e2a5a35d440e71619137341; expires=Sun, 23-May-21 00:22:21 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
-Cache-Control: no-cache, private, max-age=31536000
-Display: staticcontent_sol, staticcontent_sol
-Expires: Sat, 23 Apr 2022 00:22:21 GMT
+Set-Cookie: __cfduid=d4fc80b50d43775e39ded37062741d5871619725711; expires=Sat, 29-May-21 19:48:31 GMT; path=/; domain=.restapiexample.com; HttpOnly; SameSite=Lax
+Display: staticcontent_sol
+Expires: Wed, 28 Apr 2021 19:48:32 GMT
 Host-Header: c2hhcmVkLmJsdWVob3N0LmNvbQ==
+Pagespeed: off
 Referrer-Policy: 
-Response: 200
+Response: 429
+Retry-After: 28
 Vary: Accept-Encoding
 Vary: Accept-Encoding,Origin
 X-Ezoic-Cdn: Miss
-X-Middleton-Display: staticcontent_sol, staticcontent_sol
-X-Middleton-Response: 200
+X-Middleton-Display: staticcontent_sol
+X-Middleton-Response: 429
 X-Ratelimit-Limit: 60
-X-Ratelimit-Remaining: 58
+X-Ratelimit-Remaining: 57
+X-Ratelimit-Reset: 1619725740
 X-Sol: pub_site
 CF-Cache-Status: DYNAMIC
-cf-request-id: 099db43f900000ed6bfb866000000001
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=CtpBTPpTYj5v10WalvHRS%2B0srC0SvgPVYTiJCuewZAJlkXIJ9YEzf49X0VEBDJ82gYz%2BR04y5kyDSswODGL3WyzH6IchaO0U4JhkfpKPmafL4oMvU2zDoAI%3D"}],"group":"cf-nel","max_age":604800}
+cf-request-id: 09c0c611ad0000269a2a9a3000000001
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=qvS5FNOOfmDucmA36pA%2Blc957xEcRhhs8SeqUasbtVfA0Avy9nnvbGTCKj74CvYSgM1VE9%2FOyMnuyjV4oQixZkjkvobJdcuwwXmdbzaSxRFDVJFb0rYjqmI%3D"}]}
 NEL: {"max_age":604800,"report_to":"cf-nel"}
 Server: cloudflare
-CF-RAY: 6442efdf4cb7ed6b-SJC
-Content-Encoding: gzip
+CF-RAY: 647b0c62a903269a-SJC
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
-{
-    "status": "success",
-    "data": "2",
-    "message": "Successfully! Record has been deleted"
-}
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Too Many Requests</title>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+    <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 100;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .full-height {
+                height: 100vh;
+            }
+
+            .flex-center {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .position-ref {
+                position: relative;
+            }
+
+            .code {
+                border-right: 2px solid;
+                font-size: 26px;
+                padding: 0 15px 0 15px;
+                text-align: center;
+            }
+
+            .message {
+                font-size: 18px;
+                text-align: center;
+            }
+        </style>
+  </head>
+  <body>
+    <div class="flex-center position-ref full-height">
+      <div class="code">
+                429            </div>
+      <div class="message" style="padding: 10px;">
+                Too Many Requests            </div>
+    </div>
+  </body>
+</html>

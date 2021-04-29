@@ -47,17 +47,13 @@ public class StepDefinitions extends Utils {
 			if (response.getStatusCode() == code) {
 				String resp = response.asString();
 				JsonPath js = new JsonPath(resp);
-				System.out.println("Employee details:" + js.get("data").toString());
 			} else {
 				assertEquals("Emp record get has not been successfull.", code, response.getStatusCode());
-				System.out.println("Employee record get API status code: " + response.getStatusCode());
 			}
 		} else {
 			if (response.getStatusCode() == code) {
-				System.out.println("Successfully! deleted Records");
 			} else {
 				assertEquals("Emp record delete has not been successfull.", code, response.getStatusCode());
-				System.out.println("Emp record has not been deleted.status code is " + response.getStatusCode());
 			}
 		}
 	}
@@ -81,7 +77,7 @@ public class StepDefinitions extends Utils {
 	public void validate_the_reponse_data_for_delete_API(String status_code, String message) {
 		String resp = response.asString();
 		JsonPath js = new JsonPath(resp);
-		assertEquals(js.get("status"), status_code);
-		assertEquals(js.get("message"), message);
+		assertEquals(status_code, js.get("status"));
+		assertEquals(message, js.get("message"));		
 	}
 }
